@@ -10,14 +10,16 @@
 + If you don't have lex or yacc compiler first install it using following command :- 
 	```
 	sudo apt-get install flex
-	sudo apt-get install byaac
+	sudo apt-get install byacc
 	```
 + Then first compile the yacc file and then lex file by using command :- 
 	```
-	yacc -d filename.y
-	lex filename.l
+	yacc -d calcy_yacc.y
+	lex calcy_lex.l
 	gcc gcc lex.yy.c y.tab.c -o lex_yacc
 	./lex_yacc
+	$ 10+10
+	Terminal output: RESULT IS 20.000000
 	```
 + The *'-d'* is used to generate **y.tab.h** file.
 ## LEX - ( A Lexical Analyzer Generator )
