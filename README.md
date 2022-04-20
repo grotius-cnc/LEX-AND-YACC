@@ -16,7 +16,7 @@
 	```
 	yacc -d calcy_yacc.y
 	lex calcy_lex.l
-	gcc gcc lex.yy.c y.tab.c -o lex_yacc
+	gcc lex.yy.c y.tab.c -o lex_yacc
 	./lex_yacc
 	$ 10+10 (+enter)
 	Terminal output : `RESULT IS 20.000000`
