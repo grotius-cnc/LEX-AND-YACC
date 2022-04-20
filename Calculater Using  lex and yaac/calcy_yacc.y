@@ -29,7 +29,7 @@ expr:
 %%
 void yyerror(char *s)
 {
-	printf(stdout,"%s",s);
+	// printf(stdout,"%s",s);
 }
 
 int main()
